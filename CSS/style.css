@@ -18,7 +18,6 @@
 
 body {
 	min-width: 320px;
-	position: relative;
 }
 
   				/*HEADER*/
@@ -28,7 +27,19 @@ body {
 	background-size: cover;
 	padding-bottom: 220px;
 	position: relative;
+	width: 100%;
+}
 
+@media (min-width:641px) and (max-width:1199px) {
+	.header {
+		background-image: url(../images/banner-bg-tablet.jpg);
+	}
+}
+
+@media (min-width:1200px) {
+	.header {
+		background-image: url(../images/banner-bg.jpg);
+	}
 }
 
 .header::after {
@@ -43,7 +54,6 @@ body {
 }
 
 .wrapper {
-	width: 320px;
 	margin: auto;
 	position: relative;
 	z-index: 1;
@@ -51,6 +61,8 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
+	margin-left: 15px;
+	margin-right: 15px;
 }
 
 .button_burger {
@@ -86,7 +98,7 @@ body {
 }
 
 
-  			/*main content*/
+  			/*trends*/
 
 .trends {
 	padding-top: 45px;
@@ -110,8 +122,19 @@ body {
 	margin: 9px auto 0px;
 }
 
-.article_trend:nth-child(n+2) {
-	margin-top: 3px;
+@media (max-width:640px), 
+(orientation: landscape), (min-width:641px) and (max-width:1199px) {
+	.article_trend_container {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+@media (max-width:640px) and
+(orientation: portrait) {
+	.article_trend:nth-child(n+2) {
+		margin-top: 3px;
+	}
 }
 
 .trend_1 {
@@ -138,6 +161,22 @@ body {
 	min-height: 230px;
 	display: flex;
 	align-items: flex-end;
+	width: 100%;
+}
+
+@media (orientation: landscape), (min-width:641px) and (max-width:1199px) {
+	.article_trend {
+		width: 49.7%;
+	}
+	.article_trend:nth-child(odd) {
+		margin-right: 0.6%;
+	}
+	.article_trend:nth-child(n+3) {
+		margin-top: 3px;
+	}
+	.article_trend {
+		box-sizing: border-box;
+	}
 }
 
 .article_trend::after {
@@ -162,7 +201,7 @@ body {
 
 .category_items:nth-child(n+2) {
 	margin-left: 18px;
-  }
+}
 
 .category_link {
 	font-size: 14px;
@@ -181,6 +220,7 @@ body {
 }
 
 .article_trend_info {
+	width: 100%;
 	border: 3px solid #8d8057;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -189,9 +229,21 @@ body {
 	padding-bottom: 28px;
 }
 
-.news_content {
-	margin: 44px 15px 0 15px;
+				/*main content*/
+
+@media (min-width:641px) and (max-width:1199px) {
+	.main_content {
+		margin: 50px 35px 0 35px;
+		display: flex;
+	}
 }
+
+@media (max-width:640px) {
+	.news_content {
+		margin: 44px 15px 0 15px;
+	}
+}
+
 
 .news:nth-child(n+2) {
 	margin-top: 33px;
@@ -252,9 +304,25 @@ body {
 
 			/*ASIDE*/
 
-.new_posts {
-	margin: 44px 15px 0 15px;
+@media (max-width:640px) {
+	.aside {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
 }
+
+@media (min-width:641px) and (max-width:1199px) {
+	.aside {
+		margin-left: 35px;
+	}
+}
+
+@media (max-width:640px) {
+	.new_posts {
+		margin-top: 44px;
+	}
+}
+
 
 .new_posts_title {
 	font-family: opensans-bold;
@@ -304,7 +372,7 @@ body {
 }
 
 .search_box {
-	margin: 60px 15px 0 15px;
+	margin-top: 60px;
 	display: flex;
 }
 
@@ -355,7 +423,7 @@ body {
 }
 
 .distribution {
-	margin: 44px 15px 0 15px;
+	margin-top: 44px;
 }
 
 .distribution_title {
@@ -413,7 +481,7 @@ body {
   }
 
 .sections {
-	margin: 45px 15px 0 15px;
+	margin-top: 45px;
 }
 
 .section_title {
@@ -464,7 +532,7 @@ body {
 }
 
 .themes {
-	margin: 44px 15px 0 15px;
+	margin-top: 44px;
 }
 
 .themes_title {
@@ -512,9 +580,21 @@ body {
 	vertical-align: super;
 }
 
-.shop {
-	margin: 44px 15px 0 15px;
-}
+
+				/*SHOP*/
+
+
+@media (max-width:640px) {
+	.shop {
+		margin: 44px 15px 0 15px;
+	}
+}	
+
+@media (min-width:640px) and (max-width:1199px) {
+	.shop {
+		margin: 44px 35px 0 35px;
+	}
+}	
 
 .shop_title {
 	font-size: 16px;
@@ -540,16 +620,16 @@ body {
 
 .shop_media_img {
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	width: calc(100% - 48px);
+	margin-left: 24px;
+	margin-right: 24px;
 }
 
 .shop_info {
-	margin-right: 31px;
-	margin-left: 31px;
-	padding-top: 22px;
-	outline: 3px solid #b59f5b;
-	outline-offset: 28px;
+	border: 3px solid #b59f5b;
+	position: relative;
+	padding: 53px 21px 26px 21px;
+	top: -28px;
 }
 
 .shop_product_title {
@@ -685,6 +765,8 @@ body {
 
 .popup_hidden {
 	display: none;
+	justify-content: center;
+	align-content: center;
 	margin-top: 56px;
 	position: fixed;
 	z-index: 999;
@@ -714,6 +796,7 @@ body {
 	position: relative;
 	position: fixed;
 	z-index: 999;
+	max-width: 390px;
 }
 
 .popup_title {
@@ -865,7 +948,7 @@ body {
     width: 28px;
     height: 28px;
     position: absolute;
-    background-image: url(../SVG/form-x.svg);
+    background-image: url(../svg/form-x.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: transparent;
