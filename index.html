@@ -12,17 +12,41 @@
 <body>
 	<header class="header">
 		<div class="wrapper">
-			<div class="button_burger">
-				<a href="#0" class="menu_link">
-					<div class="burger_line"></div>
-					<div class="burger_line"></div>
-					<div class="burger_line"></div>
-				</a>
-			</div>
-			<div class="logo-box">
-				<a href="#0" class="logo">
-					<img src="svg/noemi-logo.svg" alt="логотип NOEMI" width="269">
-				</a>
+			<div class="header_box">
+				<div class="logo-box">
+					<a href="#0" class="logo">
+						<img class="logo_image" src="svg/noemi-logo.svg" alt="логотип NOEMI">
+					</a>
+				</div>
+				<div class="button_burger">
+					<a href="#0" class="menu_link">
+						<div class="burger_line"></div>
+						<div class="burger_line"></div>
+						<div class="burger_line"></div>
+					</a>
+				</div>
+				<nav class="header_navigations">
+					<ul class="header_navigations_items">
+						<li class="header_navigations_item">
+							<a href="#0" class="header_navigations_link">главная</a>
+						</li>
+						<li class="header_navigations_item">
+							<a href="#0" class="header_navigations_link">посты</a>
+						</li>
+						<li class="header_navigations_item">
+							<a href="#0" class="header_navigations_link">статьи</a>
+						</li>
+						<li class="header_navigations_item">
+							<a href="#0" class="header_navigations_link">теги</a>
+						</li>
+						<li class="header_navigations_item">
+							<a href="#0" class="header_navigations_link">темы</a>
+						</li>
+						<li class="header_navigations_item">
+							<a href="#0" class="header_navigations_link">контакты</a>
+						</li>
+					</ul>
+				</nav>
 			</div>
 			<h1 class="title">блог о творчестве, спорте, и образе жизни</h1>
 		</div>
@@ -36,7 +60,7 @@
 			<div class="article_trend_container">
 				<article class="article_trend trend_1">
 					<div class="article_trend_info">
-						<ul class="category">
+						<ul class="article_trend_category">
 							<li class="category_items">
 								<a href="#0" class="category_link">lifestyle</a>
 							</li>
@@ -50,7 +74,7 @@
 
 				<article class="article_trend trend_2">
 					<div class="article_trend_info">
-						<ul class="category">
+						<ul class="article_trend_category">
 							<li class="category_items">
 								<a href="#0" class="category_link">food</a>
 							</li>
@@ -61,7 +85,7 @@
 
 				<article class="article_trend trend_3">
 					<div class="article_trend_info">
-						<ul class="category">
+						<ul class="article_trend_category">
 							<li class="category_items">
 								<a href="#0" class="category_link">lifestyle</a>
 							</li>
@@ -75,7 +99,7 @@
 
 				<article class="article_trend trend_4">
 					<div class="article_trend_info">
-						<ul class="category">
+						<ul class="article_trend_category">
 							<li class="category_items">
 								<a href="#0" class="category_link">food</a>
 							</li>
@@ -95,7 +119,7 @@
 						<img class="news_image" src="images/last-post1.jpg" alt="рассвет на берегу моря">
 					</figure>
 					<div class="news_info">
-						<ul class="category">
+						<ul class="news_info_category">
 							<li class="category_items">
 								<a href="#0" class="category_link">travel</a>
 							</li>
@@ -122,7 +146,7 @@
 						<img class="news_image" src="images/last-post2.jpg" alt="девушка занимается йогой на пляже">
 					</figure>
 					<div class="news_info">
-						<ul class="category">
+						<ul class="news_info_category">
 							<li class="category_items">
 								<a href="#0" class="category_link">health</a>
 							</li>
@@ -150,7 +174,7 @@
 							alt="толпа поклонников на музыкальном фестивале" width="330px">
 					</figure>
 					<div class="news_info">
-						<ul class="category">
+						<ul class="news_info_category">
 							<li class="category_items">
 								<a href="#0" class="category_link">music</a>
 							</li>
@@ -173,7 +197,7 @@
 						<img class="news_image" src="images/last-post4.jpg" alt="кухонный стол с посудой и едой">
 					</figure>
 					<div class="news_info">
-						<ul class="category">
+						<ul class="news_info_category">
 							<li class="category_items">
 								<a href="#0" class="category_link">lifestyle</a>
 							</li>
@@ -198,7 +222,7 @@
 						<img class="news_image" src="images/last-post5.jpg" alt="принт Hang Out Spot на подушке">
 					</figure>
 					<div class="news_info">
-						<ul class="category">
+						<ul class="news_info_category">
 							<li class="category_items">
 								<a href="#0" class="category_link">lifestyle</a>
 							</li>
@@ -372,58 +396,69 @@
 	</div>
 	<section class="shop">
 		<h3 class="shop_title">наши изделия</h3>
-		<div class="shop_product">
-			<figure class="shop_media">
-				<img class="shop_media_img" src="images/shop-item-desk1.jpg" alt="">
-			</figure>
-			<div class="shop_info">
-				<h3 class="shop_product_title">подушки на диван</h3>
-				<span class="shop_product_info">Набор из двух подушек с модными принтами. Видео о создании <a
-						class="shop_product_info_link" href="#0">здесь</a>.</span>
-				<div class="buy_box">
-					<div class="price">
-						<span class="old_price">1000 ₽</span>
-						<span class="new_price">800 ₽</span>
+		<div class="shop_products">
+			<div class="shop_product">
+				<picture class="shop_media">
+					<source media="(max-width: 640px)" srcset="images/shop-item-mobile1.jpg">
+					<source media="(min-width: 641px) and (max-width: 1199px)" srcset="images/shop-item-tablet1.jpg">
+					<source media="(min-width: 1200px)" srcset="images/shop-item-desk1.jpg">
+					<img class="shop_media_img" src="images/shop-item-desk1.jpg" alt="Фото подушек с принтом">
+				</picture>
+				<div class="shop_info">
+					<h3 class="shop_product_title">подушки на диван</h3>
+					<span class="shop_product_info">Набор из двух подушек с модными принтами. Видео о создании <a
+							class="shop_product_info_link" href="#0">здесь</a>.</span>
+					<div class="buy_box">
+						<div class="price">
+							<span class="old_price">1000 ₽</span>
+							<span class="new_price">800 ₽</span>
+						</div>
+						<button class="button" type="button">в магазин</button>
 					</div>
-					<button class="button" type="button">в магазин</button>
+				</div>
+
+			</div>
+
+			<div class="shop_product">
+				<picture class="shop_media">
+					<source media="(max-width: 640px)" srcset="images/shop-item-mobile2.jpg">
+					<source media="(min-width: 641px) and (max-width: 1199px)" srcset="images/shop-item-tablet2.jpg">
+					<source media="(min-width: 1200px)" srcset="images/shop-item-desk2.jpg">
+					<img class="shop_media_img" src="images/shop-item-desk2.jpg" alt="Рукодельная кукла Зайчик">
+				</picture>
+				<div class="shop_info">
+					<h3 class="shop_product_title">кукла "зайчик"</h3>
+					<span class="shop_product_info">Интерьерная рукодельная кукла "Зайчик", созданию которой посвящена
+						<a class="shop_product_info_link" href="#0">весеняя серия постов</a> в блоге и несколько
+						подкастов.</span>
+					<div class="buy_box">
+						<div class="price">
+							<span class="new_price">3500 ₽</span>
+						</div>
+						<button class="button" type="button">в магазин</button>
+					</div>
 				</div>
 			</div>
 
-		</div>
-
-		<div class="shop_product">
-			<figure class="shop_media">
-				<img class="shop_media_img" src="images/shop-item-desk2.jpg" alt="">
-			</figure>
-			<div class="shop_info">
-				<h3 class="shop_product_title">кукла "зайчик"</h3>
-				<span class="shop_product_info">Интерьерная рукодельная кукла "Зайчик", созданию которой посвящена <a
-						class="shop_product_info_link" href="#0">весеняя серия постов</a> в блоге и несколько
-					подкастов.</span>
-				<div class="buy_box">
-					<div class="price">
-						<span class="new_price">3500 ₽</span>
+			<div class="shop_product">
+				<picture class="shop_media">
+					<source media="(max-width: 640px)" srcset="images/shop-item-mobile3.jpg">
+					<source media="(min-width: 641px) and (max-width: 1199px)" srcset="images/shop-item-tablet3.jpg">
+					<source media="(min-width: 1200px)" srcset="images/shop-item-desk3.jpg">
+					<img class="shop_media_img" src="images/shop-item-desk3.jpg" alt="Необычная шестиугольная рамка">
+				</picture>
+				<div class="shop_info">
+					<h3 class="shop_product_title">шестиугольная рамка</h3>
+					<span class="shop_product_info">Необычная рамка для украшения дома из видео <a
+							class="shop_product_info_link" href="#0">«Как сделать
+							рамку из подручных средств за 30 минут»</a></span>
+					<div class="buy_box">
+						<div class="price">
+							<span class="old_price">500 ₽</span>
+							<span class="new_price">400 ₽</span>
+						</div>
+						<button class="button" type="button">в магазин</button>
 					</div>
-					<button class="button" type="button">в магазин</button>
-				</div>
-			</div>
-		</div>
-
-		<div class="shop_product">
-			<figure class="shop_media">
-				<img class="shop_media_img" src="images/shop-item-desk3.jpg" alt="">
-			</figure>
-			<div class="shop_info">
-				<h3 class="shop_product_title">шестиугольная рамка</h3>
-				<span class="shop_product_info">Необычная рамка для украшения дома из видео <a
-						class="shop_product_info_link" href="#0">«Как сделать
-						рамку из подручных средств за 30 минут»</a></span>
-				<div class="buy_box">
-					<div class="price">
-						<span class="old_price">500 ₽</span>
-						<span class="new_price">400 ₽</span>
-					</div>
-					<button class="button" type="button">в магазин</button>
 				</div>
 			</div>
 		</div>
