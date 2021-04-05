@@ -197,6 +197,12 @@ body {
 	.title_section::after {
 		margin: 9px auto 0px;
 	}
+	.article_trend {
+		min-height: 230px;
+	}
+	.article_trend_info {
+		padding: 34px 20px 28px
+	}
 	.title_trends {
 		font-size: 16px;
 	}
@@ -213,6 +219,12 @@ body {
 	.title_section::after {
 		margin: 11px auto 0px;
 	}
+	.article_trend {
+		min-height: 247px;
+	}
+	.article_trend_info {
+		padding: 36px 30px 30px;
+	}
 	.title_trends {
 		font-size: 17px;
 	}
@@ -228,6 +240,12 @@ body {
 	}
 	.title_section::after {
 		margin: 14px auto 0px;
+	}
+	.article_trend {
+		min-height: 320px;
+	}
+	.article_trend_info {
+		padding: 40px 35px 30px;
 	}
 	.title_trends {
 		font-size: 20px;
@@ -307,7 +325,6 @@ body {
 	background-repeat: no-repeat;
 	padding: 15px;
 	position: relative;
-	min-height: 230px;
 	display: flex;
 	align-items: flex-end;
 }
@@ -325,7 +342,6 @@ body {
 
 .article_trend_category {
 	display: flex;
-	margin-top: 34px;
 }
 
 .category_items {
@@ -348,17 +364,14 @@ body {
 	font-family: opensans-bold;
 	color: #ffffff;
 	text-transform: uppercase;
-	margin-top: 13px;
+	margin-top: 15px;
 }
 
 .article_trend_info {
 	width: 100%;
 	border: 3px solid #8d8057;
-	padding-left: 15px;
-	padding-right: 15px;
 	position: relative;
 	z-index: 1;
-	padding-bottom: 28px;
 }
 
 
@@ -506,7 +519,8 @@ body {
 @media (min-width:641px) and (max-width:1199px) {
 	.aside {
 		margin-left: 35px;
-		min-width: 271px;
+		flex-shrink: 0;
+		width: 271px;
 	}
 	.distribution, .sections, .themes {
 		margin-top: 60px;
@@ -519,7 +533,8 @@ body {
 @media (min-width:1200px) {
 	.aside {
 		margin-left: 125px;
-		max-width: 271px;
+		flex-shrink: 0;
+		width: 271px;
 	}
 	.distribution, .sections, .themes {
 		margin-top: 60px;
@@ -812,9 +827,6 @@ body {
 	.shop_product:nth-child(even) {
 		margin-left: 24px;
 	}
-	.shop_info {
-		flex-grow: 1;
-	}
 }
 				
 @media (min-width:1200px) {
@@ -841,12 +853,14 @@ body {
 	.shop_product:nth-child(n+2) {
 		margin-left: 62px;
 	}
-	.shop_info {
-		flex-grow: 1;
-	}
 	.shop_product_title {
 		font-size: 20px;
 	}
+}
+
+.shop_product {
+	display: flex;
+	flex-direction: column;
 }
 
 .shop_title {
@@ -877,6 +891,7 @@ body {
 	position: relative;
 	padding: 53px 21px 26px 21px;
 	top: -28px;
+	flex-grow: 1;
 }
 
 .shop_product_title {
