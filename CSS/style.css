@@ -1,3 +1,21 @@
+@media (max-width:640px) {
+	html {
+		font-size: 62.5%;
+	}
+}
+
+@media (min-width:641px) and (max-width:1199px) {
+	html {
+		font-size: 62.5%;
+	}
+}
+
+@media (min-width: 1200px) {
+	html {
+		font-size: 62.5%;
+	}
+}
+
 * {
 	margin: 0px;
 	padding: 0px;
@@ -79,7 +97,7 @@ body {
 	}
 	.title {
 		margin: 42px auto 0;
-		font-size: 26px;
+		font-size: 2.6rem;
 	}
 }
 
@@ -107,7 +125,7 @@ body {
 	}
 	.title {
 		margin: 105px auto 0;
-		font-size: 40px;
+		font-size: 4rem;
 	}
 }
 
@@ -117,7 +135,7 @@ body {
 	}
 	.wrapper {
 		padding: 28px 15px 0;
-		width: 1200px;
+		max-width: 1200px;
 		margin: auto;
 		box-sizing: border-box;
 	}
@@ -134,7 +152,7 @@ body {
 	}
 	.title {
 		max-width: 800px;
-		font-size: 45px;
+		font-size: 4.5rem;
 		margin: auto;
 		padding: 127px 0 147px;
 	}
@@ -166,7 +184,7 @@ body {
 }
 
 .header_navigations_link {
-	font-size: 13px;
+	font-size: 1.3rem;
 	font-family: opensans-regular;
 	color: #f4f7f6;
 	text-decoration: none;
@@ -191,7 +209,7 @@ body {
 		margin-top: 45px;
 	}
 	.title_section {
-		font-size: 16px;
+		font-size: 1.6rem;
 		padding-bottom: 25px;
 	}
 	.title_section::after {
@@ -204,7 +222,7 @@ body {
 		padding: 34px 20px 28px
 	}
 	.title_trends {
-		font-size: 16px;
+		font-size: 1.6rem;
 	}
 }
 
@@ -213,7 +231,7 @@ body {
 		margin-top: 50px;
 	}
 	.title_section {
-		font-size: 18px;
+		font-size: 1.8rem;
 		padding-bottom: 19px;
 	}
 	.title_section::after {
@@ -226,7 +244,7 @@ body {
 		padding: 36px 30px 30px;
 	}
 	.title_trends {
-		font-size: 17px;
+		font-size: 1.7rem;
 	}
 }
 
@@ -235,7 +253,7 @@ body {
 		margin-top: 64px;
 	}
 	.title_section {
-		font-size: 20px;
+		font-size: 2rem;
 		padding-bottom: 28px;
 	}
 	.title_section::after {
@@ -248,7 +266,7 @@ body {
 		padding: 40px 35px 30px;
 	}
 	.title_trends {
-		font-size: 20px;
+		font-size: 2rem;
 	}
 }
 
@@ -283,7 +301,7 @@ body {
 
 @media (max-width: 640px) and (orientation: landscape), (min-width: 641px) and (max-width: 1199px) and (orientation: portrait) {
 	.article_trend {
-		width: calc(50% - 2px);
+		width: calc((100% - 4px)/2);
 		box-sizing: border-box;
 	}
 	.article_trend:nth-child(even) {
@@ -296,7 +314,7 @@ body {
 
 @media (min-width: 641px) and (max-width: 1199px) and (orientation: landscape), (min-width: 1200px) {
 	.article_trend {
-		width: calc(25% - 3px);
+		width: calc((100% - 12px)/4);
 		box-sizing: border-box;
 	}
 	.article_trend:nth-child(n+2) {
@@ -398,7 +416,7 @@ body {
 	}
 	.news_text {
 		margin-top: 25px;
-		font-size: 14px;
+		font-size: 1.4rem;
 	}
 }
 				
@@ -421,13 +439,13 @@ body {
 	}
 	.news_text {
 		margin-top: 40px;
-		font-size: 15px;
+		font-size: 1.5rem;
 	}
 }
 
 @media (min-width:1200px) {
 	.main_content {
-		width: 1200px;
+		max-width: 1200px;
 		margin: 64px auto 64px;
 		display: flex;
 		padding-left: 15px;
@@ -454,7 +472,7 @@ body {
 	}
 	.news_text {
 		margin-top: 55px;
-		font-size: 15px;
+		font-size: 1.5rem;
 	}
 }
 
@@ -474,14 +492,14 @@ body {
 	margin-top: 16px;
 	font-family: opensans-bold;
 	color: #000000;
-	font-size: 16px;
+	font-size: 1.6rem;
 	text-transform: uppercase;
 }
 
 .date {
 	font-family: opensans-regular;
 	color: #888888;
-	font-size: 12px;
+	font-size: 1.2rem;
 }
 
 .author {
@@ -489,7 +507,7 @@ body {
 	text-decoration: none;
 	font-family: opensans-bold;
 	color: #000000;
-	font-size: 12px;
+	font-size: 1.2rem;
 }
 
 .news_text {
@@ -512,7 +530,7 @@ body {
 		margin-top: 45px;		
 	}
 	.new_posts_title, .section_title, .themes_title {
-		font-size: 16px;
+		font-size: 1.6rem;
 	}
 }
 
@@ -526,7 +544,7 @@ body {
 		margin-top: 60px;
 	}
 	.new_posts_title, .section_title, .themes_title {
-		font-size: 14px;
+		font-size: 1.4rem;
 	}
 }
 
@@ -540,7 +558,7 @@ body {
 		margin-top: 60px;
 	}
 	.new_posts_title, .section_title, .themes_title {
-		font-size: 14px;
+		font-size: 1.4rem;
 	}
 }
 
@@ -580,7 +598,7 @@ body {
 .new_post_title {
 	margin-top: 9px;
 	font-family: opensans-bold;
-	font-size: 14px;
+	font-size: 1.4rem;
 	text-transform: uppercase;
 }
 
@@ -644,7 +662,7 @@ body {
 .distribution_title {
 	font-family: opensans-bold;
 	color: #0f0d0e;
-	font-size: 16px;
+	font-size: 1.6rem;
 	text-transform: uppercase;
 	text-align: center;
 	margin-bottom: 28px;
@@ -685,7 +703,7 @@ body {
 	height: 48px;
 	background-color: #b59f5b;
 	font-family: opensans-bold;
-	font-size: 14px;
+	font-size: 1.4rem;
 	text-transform: uppercase;
 	color: #ffffff;
 	cursor: pointer;
@@ -766,7 +784,7 @@ body {
 	text-decoration: none;
 	color: #000000;
 	font-family: opensans-bold;
-	font-size: 14px;
+	font-size: 1.4rem;
 }
 
 .theme:nth-child(n+2) {
@@ -779,7 +797,7 @@ body {
 }
 
 .theme_amount {
-	font-size: 12px;
+	font-size: 1.2rem;
 	font-family: opensans-bold;
 	color: #b59f5b;
 	vertical-align: super;
@@ -796,13 +814,10 @@ body {
 		margin: 44px 15px 0 15px;
 	}
 	.shop_title {
-		font-size: 16px;
+		font-size: 1.6rem;
 	}
 	.shop_title::after {
 		margin: 15px auto 0;
-	}
-	.shop_product:nth-child(n+2) {
-		margin-top: 54px;
 	}
 }
 				
@@ -812,7 +827,7 @@ body {
 		margin: 44px 35px 0 35px;
 	}
 	.shop_title {
-		font-size: 18px;
+		font-size: 1.8rem;
 	}
 	.shop_title::after {
 		margin: 17px auto 0;
@@ -822,7 +837,7 @@ body {
 	flex-wrap: wrap;
 	}
 	.shop_product {
-		width: calc(50% - 12px);
+		width: calc((100% - 24px)/2);
 	}
 	.shop_product:nth-child(even) {
 		margin-left: 24px;
@@ -831,14 +846,14 @@ body {
 				
 @media (min-width:1200px) {
 	.shop {
-		width: 1200px;
+		max-width: 1200px;
 		margin: auto;
 		padding-left: 15px;
 		padding-right: 15px;
 		box-sizing: border-box;
 	}
 	.shop_title {
-		font-size: 20px;
+		font-size: 2rem;
 	}
 	.shop_title::after {
 		margin: 13px auto 0;
@@ -848,13 +863,13 @@ body {
 		flex-wrap: wrap;
 	}
 	.shop_product {
-		width: calc(33.3% - 41px);
+		width: calc((100% - 124px)/3);
 	}
 	.shop_product:nth-child(n+2) {
 		margin-left: 62px;
 	}
 	.shop_product_title {
-		font-size: 20px;
+		font-size: 2rem;
 	}
 }
 
@@ -903,13 +918,13 @@ body {
 
 .shop_product_info {
 	font-family: opensans-regular;
-	font-size: 15px;
+	font-size: 1.5rem;
 	color: #0f0d0e;
 }
 
 .shop_product_info_link {
 	font-family: opensans-regular;
-	font-size: 15px;
+	font-size: 1.5rem;
 	color: #b59f5b;
 	text-decoration: none;
 }
@@ -927,7 +942,7 @@ body {
 
 .old_price {
 	font-family: opensans-bold;
-	font-size: 14px;
+	font-size: 1.4rem;
 	color: #0f0d0e;
 	text-transform: uppercase;
 	text-decoration: line-through;
@@ -935,7 +950,7 @@ body {
 
 .new_price {
 	font-family: opensans-bold;
-	font-size: 20px;
+	font-size: 2rem;
 	color: #0f0d0e;
 	text-transform: uppercase;
 }
@@ -945,7 +960,7 @@ body {
 	width: 140px;
 	background-color: #b59f5b;
 	color: #ffffff;
-	font-size: 14px;
+	font-size: 1.4rem;
 	font-family: opensans-bold;
 	text-transform: uppercase;
 }
@@ -960,7 +975,7 @@ body {
 
 @media (max-width:640px) {
 	.footer {
-		margin: 44px 15px 0;
+		margin: 16px 15px 0;
 		padding-bottom: 50px;
 	}
 	.additional_info {
@@ -970,7 +985,7 @@ body {
 		
 @media (min-width:641px) and (max-width:1199px) {
 	.footer {
-		margin: 50px 35px 0;
+		margin: 22px 35px 0;
 		padding-bottom: 40px;
 	}
 	.additional_info {
@@ -980,8 +995,8 @@ body {
 
 @media (min-width:1200px) {
 	.footer {
-		width: 1200px;
-		margin: 64px auto 0;
+		max-width: 1200px;
+		margin: 37px auto 0;
 		padding: 0 15px 44px;
 		box-sizing: border-box;
 	}
@@ -1043,7 +1058,7 @@ body {
 
 .additional_info {
 	display: block;
-	font-size: 12px;
+	font-size: 1.2rem;
 	font-family: opensans-bold;
 	text-align: center;
 	text-decoration: none;
@@ -1108,7 +1123,7 @@ body {
 }
 
 .popup_title {
-	font-size: 16px;
+	font-size: 1.6rem;
 	font-family: opensans-bold;
 	text-align: center;
 	color: #0f0d0e;
@@ -1131,7 +1146,7 @@ body {
 
 .popup_question {
 	font-family: opensans-regular;
-	font-size: 13px;
+	font-size: 1.3rem;
 	color: #000000;
 }
 
@@ -1142,7 +1157,7 @@ body {
 	background-color: #f4f7f6;
 	padding-left: 20px;
 	font-family: opensans-regular;
-	font-size: 13px;
+	font-size: 1.3rem;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	background-image: url(../svg/form-arrows.svg);
@@ -1181,7 +1196,7 @@ body {
 	display: inline-block;
 	font-family: opensans-regular;
 	color: #000000;
-	font-size: 13px;
+	font-size: 1.3rem;
 }
 
 .popup_radio_label::before {
@@ -1218,7 +1233,7 @@ body {
 	background-color: #f4f7f6;
 	font-family: opensans-regular;
 	color: #000000;
-	font-size: 13px;
+	font-size: 1.3rem;
 	padding: 21px;
 	box-sizing: border-box;
 }
@@ -1234,7 +1249,7 @@ body {
 	width: 100%;
 	background-color: #b59f5b;
 	color: #ffffff;
-	font-size: 14px;
+	font-size: 1.4rem;
 	font-family: opensans-bold;
 	text-transform: uppercase;
 	cursor: pointer;
