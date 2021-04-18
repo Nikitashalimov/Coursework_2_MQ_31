@@ -1,12 +1,12 @@
 			/*HTML*/
 
-@media (max-width:640px) {
+@media (max-width:767px) {
 	html {
 		font-size: 62.5%;
 	}
 }
 
-@media (min-width:641px) and (max-width:1199px) {
+@media (min-width:768px) and (max-width:1199px) {
 	html {
 		font-size: 62.5%;
 	}
@@ -915,7 +915,7 @@ body {
 
 
 
-@media (max-width:640px) {
+@media (max-width:767px) {
 	.header {
 		background-image: url(../images/banner-mobile.jpg);
 		padding-bottom: 220px;
@@ -1014,7 +1014,7 @@ body {
 	}
 }
 
-@media (min-width:641px) and (max-width:1199px) {
+@media (min-width:768px) and (max-width:1199px) {
 	.header {
 		padding-bottom: 125px;
 		background-image: url(../images/banner-bg-tablet.jpg);
@@ -1251,7 +1251,7 @@ body {
 	}
 }
 
-@media (max-width: 640px) and (orientation: portrait) {
+@media (max-width: 767px) and (orientation: portrait) {
 	.article_trend {
 		width: 100%;
 	}
@@ -1260,7 +1260,7 @@ body {
 	}
 }
 
-@media (max-width: 640px) and (orientation: landscape), (min-width: 641px) and (max-width: 1199px) and (orientation: portrait) {
+@media (max-width: 767px) and (orientation: landscape), (min-width: 768px) and (max-width: 1199px) and (orientation: portrait) {
 	.article_trend {
 		width: calc((100% - 4px)/2);
 		box-sizing: border-box;
@@ -1273,7 +1273,7 @@ body {
 	}
 }
 
-@media (min-width: 641px) and (max-width: 1199px) and (orientation: landscape), (min-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1199px) and (orientation: landscape), (min-width: 1200px) {
 	.article_trend {
 		width: calc((100% - 12px)/4);
 		box-sizing: border-box;
